@@ -5,6 +5,7 @@ import ArticlePage from './pages/ArticlePage'
 import ArticleLististPage from './pages/ArticleLististPage'
 import Home from './pages/Home'
 import NavBar from './NavBar'
+import Erorr404 from './pages/Erorr404'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,7 +22,7 @@ function App() {
         <Route path='articles' element={<ArticleLististPage  />}  />
         <Route path='articles/:articleId' element={<ArticlePage  />}  />
         <Route path='*' element={
-          <h1>404: Page Not Found</h1>
+          <Erorr404 />
         }  />
       </Routes>
     </div>
